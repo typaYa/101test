@@ -31,12 +31,12 @@ class Comments extends Migration
         $this->forge->addKey('id', true);
 
        
-        $this->forge->createTable('message');
+        $this->forge->createTable('comments');
     }
 
     public function down()
     {
      
-        $this->forge->dropTable('message');
+        $this->forge->dropTable('comments');
     }
 }
