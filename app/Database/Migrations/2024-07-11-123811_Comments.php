@@ -8,7 +8,7 @@ class Comments extends Migration
 {
     public function up()
     {
-        // Определяем структуру таблицы
+      
         $this->forge->addField([
             'id' => [
                 'type'           => 'INT',
@@ -28,16 +28,15 @@ class Comments extends Migration
             ],
         ]);
 
-        // Определяем первичный ключ
         $this->forge->addKey('id', true);
 
-        // Создаем таблицу
+       
         $this->forge->createTable('message');
     }
 
     public function down()
     {
-        // Удаляем таблицу
+     
         $this->forge->dropTable('message');
     }
 }
