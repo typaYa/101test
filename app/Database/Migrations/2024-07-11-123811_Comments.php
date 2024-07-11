@@ -38,6 +38,6 @@ class Comments extends Migration
     public function down()
     {
         // Удаляем таблицу
-        $this->forge->dropTable('your_table_name');
+        $this->forge->dropTable('message');
     }
 }
